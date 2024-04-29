@@ -77,7 +77,7 @@ bot_user_agents = [
 "crawler"
 ]
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/m', methods=['GET', 'POST'])
 def captcha():
 
     if request.method == 'GET':
