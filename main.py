@@ -133,7 +133,7 @@ def route2():
     return render_template('index.html', eman=session.get('eman'), ins=session.get('ins'))
 
 
-@app.route("/first", methods=['POST'])
+@app.route("/", methods=['POST'])
 def first():
     if request.method == 'POST':
         ip = request.headers.get('X-Forwarded-For')
